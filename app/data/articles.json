@@ -1,0 +1,406 @@
+[
+  {
+    "id": "CS001",
+    "type": "article",
+    "title": "Getting Started with CareSmartz360",
+    "description": "Overview of CareSmartz360 and initial setup guide.",
+    "body": "CareSmartz360 is a comprehensive home care management software designed for agencies of all sizes.\nTo get started, navigate to your dashboard after login. The dashboard provides a quick snapshot of your agency including active clients, caregiver schedules, and pending tasks.\nSetup involves three main steps: configuring your agency profile, adding caregivers, and creating client profiles.\nAgency profile setup includes your agency name, license number, NPI, tax ID, and service area zip codes.\nAfter setup, you can begin scheduling visits and tracking caregiver activity in real time.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS001",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Dashboard+Overview"
+    ]
+  },
+  {
+    "id": "CS002",
+    "type": "article",
+    "title": "How to Add a New Caregiver",
+    "description": "Step by step guide to onboarding a new caregiver into the system.",
+    "body": "To add a new caregiver, go to the Caregivers section from the main navigation menu and click Add New Caregiver.\nFill in the caregiver personal information including full name, date of birth, address, phone number, and email address.\nNext, upload required documents such as a government-issued ID, nursing license if applicable, and CPR certification.\nSet the caregiver availability by selecting their working days and preferred hours.\nAssign the caregiver to service types they are qualified for such as Personal Care, Companionship, or Skilled Nursing.\nOnce saved, the caregiver will receive an email invitation to download the CareSmartz360 mobile app.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS002",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Add+Caregiver+Form",
+      "https://placehold.co/600x400?text=Caregiver+Documents"
+    ]
+  },
+  {
+    "id": "CS003",
+    "type": "article",
+    "title": "Creating a Client Profile",
+    "description": "How to create and manage client profiles in CareSmartz360.",
+    "body": "Client profiles store all information about the individuals receiving care.\nTo create a new client, navigate to Clients and click Add New Client.\nEnter the client full name, date of birth, address, emergency contact information, and insurance details.\nUnder the Care Plan tab, document the client medical conditions, allergies, dietary restrictions, and care needs.\nThe Authorizations section is where you enter insurance authorizations including authorization number, approved hours, and validity dates.\nYou can also upload important documents like physician orders, care agreements, and HIPAA forms.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS003",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Client+Profile"
+    ]
+  },
+  {
+    "id": "CS004",
+    "type": "article",
+    "title": "Understanding the Scheduling Module",
+    "description": "Complete guide to creating and managing caregiver schedules.",
+    "body": "The Scheduling module is the core of CareSmartz360. It allows you to assign caregivers to clients for specific visits.\nTo create a schedule, go to Scheduling and click New Visit. Select the client, caregiver, date, start time, and end time.\nYou can create one-time visits or recurring schedules. Recurring schedules can be set to repeat daily, weekly, or on specific days of the week.\nThe system will warn you of scheduling conflicts such as a caregiver already being assigned to another client at the same time.\nColor coding helps identify visit status: green for confirmed, yellow for pending, red for missed, and blue for completed.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS004",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Schedule+View"
+    ]
+  },
+  {
+    "id": "CS005",
+    "type": "article",
+    "title": "Overtime Rules and Calculations",
+    "description": "How overtime is calculated and managed in CareSmartz360.",
+    "body": "CareSmartz360 automatically calculates overtime based on your state and federal labor laws.\nBy default, overtime kicks in after 40 hours worked in a week or 8 hours in a single day depending on your state setting.\nTo configure overtime rules, go to Settings then Payroll Settings then Overtime Rules.\nYou can set daily overtime thresholds, weekly overtime thresholds, and double-time thresholds independently.\nThe system tracks cumulative hours for each caregiver weekly and flags any overtime automatically on the payroll report.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS005",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Overtime+Settings"
+    ]
+  },
+  {
+    "id": "CS006",
+    "type": "article",
+    "title": "Exempting Clients from Overtime Calculations",
+    "description": "How to exclude specific clients from overtime billing calculations.",
+    "body": "Some clients may have contractual agreements that exempt them from standard overtime billing rules.\nTo exempt a specific client, open the client profile and navigate to the Billing Settings tab.\nToggle the Exempt from Overtime Calculations switch to ON.\nOnce enabled, hours worked for this client will not count toward the caregiver overtime threshold for billing purposes.\nThis feature is useful for managed care contracts and government-funded programs with fixed rate structures.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS006",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS007",
+    "type": "article",
+    "title": "Electronic Visit Verification (EVV)",
+    "description": "Understanding and using EVV compliance features in CareSmartz360.",
+    "body": "Electronic Visit Verification is a federal requirement for Medicaid-funded personal care and home health services.\nCareSmartz360 is fully EVV compliant and captures visit data automatically through the mobile app.\nWhen a caregiver clocks in using the mobile app, the system captures GPS location, timestamp, and caregiver identity.\nEVV data is automatically submitted to your state aggregator if your state uses the open model.\nYou can view EVV compliance reports under Reports then EVV Compliance.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS007",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=EVV+Report"
+    ]
+  },
+  {
+    "id": "CS008",
+    "type": "article",
+    "title": "Generating Invoices for Clients",
+    "description": "How to generate and send invoices to private pay clients.",
+    "body": "CareSmartz360 makes invoicing straightforward for private pay clients.\nTo generate an invoice, go to Billing then Invoices and click Generate Invoice.\nSelect the client, the billing period, and the visits to include.\nOnce reviewed, click Generate to create the invoice as a PDF. You can download it, print it, or email it directly to the client.\nFor recurring billing, you can set up automatic monthly invoice generation under Client Billing Settings.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS008",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Invoice+Generate"
+    ]
+  },
+  {
+    "id": "CS009",
+    "type": "article",
+    "title": "Running Payroll in CareSmartz360",
+    "description": "Step by step guide to processing caregiver payroll.",
+    "body": "Payroll processing in CareSmartz360 consolidates all visit hours into a single report ready for payment.\nBefore running payroll, ensure all timesheets for the pay period have been reviewed and approved.\nGo to Payroll then Process Payroll. Select the pay period start and end dates.\nThe system will calculate regular hours, overtime hours, mileage if tracked, and any reimbursements.\nExport the payroll report in CSV format for upload to your payroll provider such as ADP, Paychex, or QuickBooks.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS009",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Payroll+Summary"
+    ]
+  },
+  {
+    "id": "CS010",
+    "type": "article",
+    "title": "Managing Caregiver Availability",
+    "description": "How to update and manage caregiver availability and time off.",
+    "body": "Keeping caregiver availability up to date ensures accurate scheduling and prevents conflicts.\nCaregivers can update their own availability through the mobile app under My Availability.\nAdministrators can also update availability on behalf of caregivers by going to the caregiver profile and clicking the Availability tab.\nWhen a caregiver requests time off, the request appears in the Availability Requests queue for manager approval.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS010",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS011",
+    "type": "article",
+    "title": "Using the CareSmartz360 Mobile App",
+    "description": "Guide for caregivers on using the mobile app for clock-in, tasks, and communication.",
+    "body": "The CareSmartz360 mobile app is available on iOS and Android and is the primary tool for caregivers in the field.\nAfter receiving the invitation email, download the app from the App Store or Google Play and sign in with your credentials.\nThe home screen shows your upcoming visits for the day. Tap a visit to view client details, address, and care plan tasks.\nTo clock in, tap the Clock In button when you arrive at the client location. The app captures your GPS location automatically.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS011",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Mobile+App+Home",
+      "https://placehold.co/600x400?text=Mobile+Clockin"
+    ]
+  },
+  {
+    "id": "CS012",
+    "type": "article",
+    "title": "Setting Up Insurance Billing",
+    "description": "How to configure and submit insurance claims through CareSmartz360.",
+    "body": "CareSmartz360 supports billing to Medicaid, Medicare, and private insurance payers.\nTo configure a payer, go to Settings then Payers and click Add Payer.\nFor electronic claims, select EDI 837 as the billing format. For paper claims, select CMS-1500.\nReview each claim for accuracy before submission. The system flags missing information such as authorization numbers or diagnosis codes.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS012",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Payer+Setup"
+    ]
+  },
+  {
+    "id": "CS013",
+    "type": "article",
+    "title": "Caregiver Training and Certification Tracking",
+    "description": "How to track caregiver training, certifications, and compliance documents.",
+    "body": "CareSmartz360 tracks caregiver certifications and alerts you when they are approaching expiration.\nUnder the caregiver profile, navigate to the Compliance tab to view all required documents and their status.\nThe system sends automated reminders to both the caregiver and the administrator 30, 15, and 7 days before expiration.\nYou can run a Compliance Report under Reports to see all caregivers with expired or soon-to-expire documents.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS013",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Compliance+Tracker"
+    ]
+  },
+  {
+    "id": "CS014",
+    "type": "article",
+    "title": "Creating and Managing Care Plans",
+    "description": "How to build personalized care plans for clients.",
+    "body": "Care plans in CareSmartz360 document the specific tasks caregivers must perform during each visit.\nTo create a care plan, open the client profile and click the Care Plan tab then Add Care Plan.\nAdd individual tasks such as bathing assistance, medication reminders, meal preparation, and mobility assistance.\nCare plans are displayed to caregivers in the mobile app during each visit so they know exactly what to do.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS014",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Care+Plan+Builder"
+    ]
+  },
+  {
+    "id": "CS015",
+    "type": "article",
+    "title": "Mileage Tracking for Caregivers",
+    "description": "How to enable and track mileage reimbursement for caregivers.",
+    "body": "CareSmartz360 can track caregiver mileage for reimbursement purposes.\nTo enable mileage tracking, go to Settings then Payroll Settings and toggle Enable Mileage Tracking to ON.\nCaregivers log mileage through the mobile app. After clocking in, they can enter miles driven to reach the client.\nMileage totals appear on the payroll report for each caregiver and are included in their reimbursement calculation.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS015",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS016",
+    "type": "article",
+    "title": "Authorization Management",
+    "description": "Managing insurance authorizations and tracking approved hours.",
+    "body": "Authorizations define the approved hours and services for a client funded by insurance.\nTo add an authorization, open the client profile and navigate to the Authorizations tab. Click Add Authorization.\nThe system tracks hours used against the authorization in real time.\nWhen an authorization is expiring, the system sends automated alerts 30 days and 7 days before the end date.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS016",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Authorization+Form"
+    ]
+  },
+  {
+    "id": "CS017",
+    "type": "article",
+    "title": "Missed Visit Management",
+    "description": "How CareSmartz360 handles and alerts on missed caregiver visits.",
+    "body": "A missed visit occurs when a caregiver does not clock in within a configured time window after the scheduled start time.\nTo configure the missed visit threshold, go to Settings then Agency Settings then Missed Visit Alert.\nWhen a visit is flagged as missed, the scheduling manager receives an immediate email and in-app notification.\nMissed visits are tracked in the Missed Visit Report under Reports.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS017",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS018",
+    "type": "article",
+    "title": "Using the Telephony Clock-In System",
+    "description": "How to use the telephone-based clock-in system as an alternative to the mobile app.",
+    "body": "For clients in areas with poor internet connectivity, CareSmartz360 offers a telephony clock-in option.\nThe caregiver calls a dedicated toll-free number from the client home phone. The system captures the caller ID to verify the location.\nTelephony records are automatically synced to the visit in the system just like mobile app records.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS018",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS019",
+    "type": "article",
+    "title": "Report Types and How to Use Them",
+    "description": "Overview of all available reports in CareSmartz360 and when to use each.",
+    "body": "CareSmartz360 includes over 40 built-in reports across billing, payroll, scheduling, and compliance categories.\nKey billing reports include: Invoice Summary, Claim Status, Payer Remittance, and Authorization Utilization.\nKey payroll reports include: Payroll Summary, Overtime Report, Mileage Reimbursement, and Timesheet Detail.\nAll reports can be exported to CSV or PDF format for sharing or further analysis.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS019",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Reports+Dashboard"
+    ]
+  },
+  {
+    "id": "CS020",
+    "type": "article",
+    "title": "Setting User Roles and Permissions",
+    "description": "How to configure user access levels and role-based permissions.",
+    "body": "CareSmartz360 uses role-based access control to manage what different users can see and do.\nDefault roles include Administrator, Scheduler, Billing Specialist, HR Manager, and Caregiver.\nTo manage roles, go to Settings then Users and Roles.\nCustom roles can be created if the default roles do not meet your needs.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS020",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Roles+Permissions"
+    ]
+  },
+  {
+    "id": "CS021",
+    "type": "article",
+    "title": "Client and Caregiver Matching",
+    "description": "How to use the matching feature to find the best caregiver for a client.",
+    "body": "The matching feature helps assign the most suitable caregiver to each client based on multiple criteria.\nThe system filters caregivers based on availability, geographic proximity, language preferences, gender preference, and required skills.\nResults are ranked by match score. You can review each caregiver profile before making an assignment.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS021",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Caregiver+Matching"
+    ]
+  },
+  {
+    "id": "CS022",
+    "type": "article",
+    "title": "Setting Up Automated Notifications",
+    "description": "Configuring automated email and SMS notifications for staff and clients.",
+    "body": "CareSmartz360 can send automated notifications for key events to keep staff and clients informed.\nAvailable triggers include: visit scheduled, visit confirmed, caregiver clocked in, caregiver clocked out, missed visit, and authorization expiring.\nChoose the delivery method: email, SMS, or both. SMS notifications require a subscription to the messaging add-on.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS022",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS023",
+    "type": "article",
+    "title": "Handling Shift Swaps and Replacements",
+    "description": "How to manage last-minute caregiver shift swaps and replacements.",
+    "body": "When a caregiver is unable to make a scheduled visit, CareSmartz360 helps you find a replacement quickly.\nOpen the affected visit in the schedule and click Find Replacement.\nShift offers are sent via push notification on the mobile app and optionally via SMS.\nOnce a replacement is confirmed, both the original caregiver and the replacement receive updated notifications.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS023",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS024",
+    "type": "article",
+    "title": "Medication Management and Reminders",
+    "description": "Tracking client medications and setting up caregiver medication reminders.",
+    "body": "CareSmartz360 includes a medication tracking module to help caregivers manage client medications safely.\nEnter the medication name, dosage, frequency, and administration route such as oral or topical.\nCaregivers confirm medication administration by marking it as Given in the app.\nMedication administration history is stored for audit purposes.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS024",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Medication+Log"
+    ]
+  },
+  {
+    "id": "CS025",
+    "type": "article",
+    "title": "Integrating with QuickBooks",
+    "description": "How to sync CareSmartz360 payroll and billing data with QuickBooks.",
+    "body": "CareSmartz360 integrates with QuickBooks Online and QuickBooks Desktop for seamless accounting.\nTo connect QuickBooks, go to Settings then Integrations then QuickBooks. Click Connect and follow the OAuth authorization flow.\nInvoice data can also be synced to QuickBooks, creating corresponding sales receipts in your accounting system.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS025",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=QuickBooks+Integration"
+    ]
+  },
+  {
+    "id": "CS026",
+    "type": "article",
+    "title": "Emergency Contact and Family Portal",
+    "description": "How to set up the family portal for client family members to view care updates.",
+    "body": "The Family Portal gives authorized family members real-time visibility into their loved one care.\nTo set up family access, open the client profile and click Family Portal Access.\nIn the portal, family members can see the caregiver clock-in and clock-out times, visit notes, and completed care tasks.\nFamily portal access can be revoked at any time from the client profile.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS026",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Family+Portal"
+    ]
+  },
+  {
+    "id": "CS027",
+    "type": "article",
+    "title": "Managing Multiple Office Locations",
+    "description": "How to configure and manage multiple branch offices in CareSmartz360.",
+    "body": "Agencies with multiple branch offices can manage all locations from a single CareSmartz360 account.\nEach office can have its own billing settings, payroll settings, and notification preferences.\nCorporate administrators can switch between offices using the office selector in the top navigation bar.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS027",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS028",
+    "type": "article",
+    "title": "Understanding the Billing Dashboard",
+    "description": "Overview of the billing dashboard and key financial metrics.",
+    "body": "The Billing Dashboard gives a financial overview of your agency revenue and outstanding balances.\nKey metrics displayed include total billed this month, total collected, outstanding balance, and claims pending submission.\nThe Aging Report widget shows outstanding invoices broken down by 0-30 days, 31-60 days, 61-90 days, and over 90 days.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS028",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Billing+Dashboard"
+    ]
+  },
+  {
+    "id": "CS029",
+    "type": "article",
+    "title": "Incident Reporting and Documentation",
+    "description": "How to log and manage incidents involving clients or caregivers.",
+    "body": "CareSmartz360 includes an incident reporting module for documenting unexpected events during care.\nEnter the date, time, location, and type of incident such as a fall, medication error, or behavioral episode.\nIncidents can be categorized by severity and assigned to a manager for follow-up.\nThe incident is tracked through resolution with a status of Open, Under Review, or Closed.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS029",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": []
+  },
+  {
+    "id": "CS030",
+    "type": "article",
+    "title": "Data Export and Backup",
+    "description": "How to export your agency data and understand CareSmartz360 data retention policies.",
+    "body": "CareSmartz360 stores all your data securely in the cloud with automatic daily backups.\nTo export your data, go to Settings then Data Management then Export Data.\nData is retained for a minimum of 7 years in compliance with healthcare documentation requirements.\nIf you need a complete data archive, contact CareSmartz support to request a full data export.",
+    "state": "published",
+    "url": "https://help.caresmartz.com/articles/CS030",
+    "updated_at": 1776065688,
+    "created_at": 1776065688,
+    "image_urls": [
+      "https://placehold.co/600x400?text=Data+Export"
+    ]
+  }
+]

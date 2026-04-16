@@ -1,0 +1,44 @@
+﻿# Environment — never commit real keys
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+venv311/
+env/
+.venv/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+sync_history.json
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node (for doc generation)
+node_modules/
+caresmartz_docs.js
+*.docx
+
+# Temp / debug scripts
+test_pipeline.py
