@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 import re
 import time
 from app.models.article import RawArticle, ArticleChunk
@@ -36,10 +36,10 @@ def articles_to_chunks(articles: list[RawArticle]) -> list[ArticleChunk]:
         description = _clean_text(article.description or "")
         full_text = f"{description}\n\n{body}".strip() if description else body
         if not full_text:
-            logger.warning(f"Article {article.id} has no body — skipping chunking")
+            logger.warning(f"Article {article.id} has no body - skipping chunking")
             continue
         chunks = _split_into_chunks(full_text)
-        logger.info(f"Article {article.id} '{article.title}' → {len(chunks)} chunk(s)")
+        logger.info(f"Article {article.id} '{article.title}' -> {len(chunks)} chunk(s)")
         for idx, chunk_text in enumerate(chunks):
             all_chunks.append(ArticleChunk(
                 chunk_id=f"{article.id}_chunk_{idx}",

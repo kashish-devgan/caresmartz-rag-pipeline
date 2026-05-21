@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 import re, time
 from datetime import datetime, timezone, timedelta
 from typing import AsyncGenerator
@@ -64,10 +64,18 @@ class IntercomService:
             next_page = data.get("pages", {}).get("next")
             if not next_page:
                 break
-            starting_after = next_page.get("starting_after")
-            if not starting_after:
+            if isinstance(next_page, dict):
+                starting_after = next_page.get("starting_after")
+                if not starting_after:
+                    break
+                params = {"per_page": PAGE_SIZE, "starting_after": starting_after}
+            elif isinstance(next_page, str):
+                from urllib.parse import urlparse, parse_qs
+                parsed = urlparse(next_page)
+                qs_params = parse_qs(parsed.query)
+                params = {k: v[0] for k, v in qs_params.items()}
+            else:
                 break
-            params = {"per_page": PAGE_SIZE, "starting_after": starting_after}
             page_num += 1
         logger.info(f"Total articles retrieved: {len(summaries)}")
         return summaries
@@ -76,7 +84,7 @@ class IntercomService:
         all_articles = await self.list_all_articles()
         now_ts = int(datetime.now(timezone.utc).timestamp())
         cutoff_ts = int((datetime.now(timezone.utc) - timedelta(hours=hours)).timestamp())
-        recent = [a for a in all_articles if a.updated_at >= cutoff_ts or a.updated_at <= cutoff_ts]
+        recent = [a for a in all_articles if a.updated_at >= cutoff_ts]
         logger.info(f"Articles to sync: {len(recent)} / {len(all_articles)}")
         return recent
 

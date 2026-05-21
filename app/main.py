@@ -1,4 +1,4 @@
-﻿from contextlib import asynccontextmanager
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
@@ -6,7 +6,6 @@ from app.core.logger import logger
 from app.api.routes.articles import router as articles_router
 from app.api.routes.sync import router as sync_router
 from app.api.routes.chat import router as chat_router
-from app.api.routes.admin import router as admin_router
 from app.services.pinecone_service import ensure_pinecone_index
 from app.services.scheduler_service import start_scheduler, stop_scheduler
 
@@ -33,7 +32,6 @@ app.add_middleware(CORSMiddleware,
 app.include_router(articles_router)
 app.include_router(sync_router)
 app.include_router(chat_router)
-app.include_router(admin_router)
 
 @app.get("/health", tags=["Health"])
 async def health_check():
