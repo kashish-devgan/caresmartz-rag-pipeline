@@ -42,6 +42,9 @@ caresmartz_docs.js
 
 # Temp / debug scripts
 test_pipeline.py
+run_hrag_tests.py
 
 # md
 observations_report.md
+test_report.md
+master_codebase_prompt.md
