@@ -23,15 +23,15 @@ The Advanced Hierarchical Retrieval-Augmented Generation (HRAG) pipeline enhance
 
 ## Tech stack
 
-| Component | Technology |
-|---|---|
-| **API Framework** | FastAPI + Uvicorn |
-| **Embeddings** | HuggingFace `all-MiniLM-L6-v2` (384-dim, local execution) |
+| Component               | Technology                                                         |
+| ----------------------- | ------------------------------------------------------------------ |
+| **API Framework**       | FastAPI + Uvicorn                                                  |
+| **Embeddings**          | HuggingFace `all-MiniLM-L6-v2` (384-dim, local execution)          |
 | **Vector DB Partition** | Pinecone Serverless (Namespaces: `hrag_parents` & `hrag_children`) |
-| **LLM Synthesis** | Groq (`llama3-8b-8192` with structured citation instructions) |
-| **Ingestion Engine** | Asynchronous HTTPX crawl workers + Pydantic v2 validation |
-| **CLI & Tools** | stand-alone Seeder and Debug Terminal Chatbot |
-| **Validation Suite** | Curated Automated test runner (`run_hrag_tests.py`) |
+| **LLM Synthesis**       | Groq (`llama3-8b-8192` with structured citation instructions)      |
+| **Ingestion Engine**    | Asynchronous HTTPX crawl workers + Pydantic v2 validation          |
+| **CLI & Tools**         | stand-alone Seeder and Debug Terminal Chatbot                      |
+| **Validation Suite**    | Curated Automated test runner (`run_hrag_tests.py`)                |
 
 ---
 
@@ -57,14 +57,15 @@ python scripts/chatbot_hrag.py
 
 Mounted side-by-side with Phase 2 routes under `/api/hrag/*` to prevent any disruptions to legacy integrations:
 
-| Method | Path | Description |
-|---|---|---|
-| POST | `/api/hrag/chat` | Submit a query to the Hierarchical RAG chatbot |
-| POST | `/api/hrag/sync/full` | Trigger an asynchronous full sync of all 705 Intercom articles |
-| POST | `/api/hrag/sync/trigger` | Trigger daily delta sync (based on lookback hours config) |
-| GET | `/api/hrag/admin/stats` | Fetch vector counts inside parents and children namespaces |
+| Method | Path                     | Description                                                    |
+| ------ | ------------------------ | -------------------------------------------------------------- |
+| POST   | `/api/hrag/chat`         | Submit a query to the Hierarchical RAG chatbot                 |
+| POST   | `/api/hrag/sync/full`    | Trigger an asynchronous full sync of all 705 Intercom articles |
+| POST   | `/api/hrag/sync/trigger` | Trigger daily delta sync (based on lookback hours config)      |
+| GET    | `/api/hrag/admin/stats`  | Fetch vector counts inside parents and children namespaces     |
 
 ### Example Chat Request
+
 ```bash
 curl -X POST http://localhost:8000/api/hrag/chat \
      -H "Content-Type: application/json" \
@@ -86,6 +87,7 @@ python scripts/chatbot_hrag.py
 ```
 
 ### In-Session Commands
+
 - `/debug`: Toggle vector scoring visibility (shows matched parent scores & top chunk ranks).
 - `/k <n>`: Dynamically adjust `top_k_parents` parameter (default 3) for the current session.
 - `/quit` / `/exit` / `/q`: End terminal session safely.
@@ -145,7 +147,8 @@ python tests/run_hrag_tests.py
 ```
 
 All test outcomes, precise latency timings, referenced sources lists, and LLM generated snippets are compiled and saved in a detailed report:
-- Local report: [tests/test_report.md](file:///e:/rag-intercom-sync/tests/test_report.md) *(Prerecorded flawless 100% success rate)*.
+
+- Local report: [tests/test_report.md](file:///e:/rag-intercom-sync/tests/test_report.md) _(Prerecorded flawless 100% success rate)_.
 - App artifact report: [test_report.md](file:///C:/Users/HP/.gemini/antigravity/brain/70fe34bb-5092-4bcd-9121-d3c12aef1cda/test_report.md).
 
 ---
@@ -155,4 +158,3 @@ All test outcomes, precise latency timings, referenced sources lists, and LLM ge
 - **Phase 1 (Complete)**: Manual help articles scraping and static vector storage.
 - **Phase 2 (Complete)**: standard Flat RAG pipeline (400-word chunks, single namespace).
 - **Phase 3 (Complete)**: 2-Level Hierarchical RAG (Sentence-aware splitting, child-parent lookup), double-namespace vector partitions, delta sync workflows, developer CLI debugger and seed utilities, and an automated 15-case verification suite.
-- **Phase 4 (Planned)**: Client portal dashboard UI, endpoints API auth, and custom connectors.

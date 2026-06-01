@@ -189,4 +189,3 @@ python tests/run_hrag_tests.py
 - **Phase 1 (Complete)**: Manual article scraping and static knowledge base.
 - **Phase 2 (Complete)**: Automated Intercom sync + standard Flat RAG chatbot.
 - **Phase 3 (Complete)**: 2-Level Hierarchical RAG pipeline integration (precision child vector chunk matching resolved directly to context-rich parent documents), multi-namespace Pinecone support, API routes, seeder and chatbot CLI tools, and an automated 15-case test suite.
-- **Phase 4 (Planned)**: Frontend UI client dashboard, API authentication, and live web scraping connectors.
